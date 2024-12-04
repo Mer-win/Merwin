@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Landing Section */
+.landing {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Header */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.head h1 {
+    font-size: 2rem;
+}
+
+/* Navigation Menu */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #32825c;
+}
+
+/* Landing Section quote */
+.quote h2 {
+    font-size: 5rem;
+    margin-top: 10px;
+}
+
+.vdo {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.vdeo {
+    width: 100%;
+    height: auto;
+}
+
+.video-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2.5rem;
+    max-width: 80%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.video-txt span {
+    color: #00ff88;
+}
+
+/* Product Section */
+.heading1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-txt {
+    margin-top: 10px;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-price {
+    color: #002506;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Guide Section */
+.guide {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+.guide h4 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.guide .heading1 h2 {
+    font-size: 2.5rem;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Navigation Styles */
+.head {
+    background-color: #333;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+/* Footer Styles */
+.footer {
+    background-color: #002506; /* Set background color */
+    color: #fff; /* Text color */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Distribute space between sections */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+    gap: 40px;
+}
+
+.footer h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.footer a:hover {
+    color: #ff0; /* Change color on hover */
+}
+
+.footer .copyright {
+    margin-top: 20px;
+}
+
+.footer .fas {
+    margin-right: 10px; /* Space between phone icon and number */
+}
+/* Footer Styles */
+.footer {
+    background-color: #002506; /* Set background color */
+    color: #fff; /* Text color */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Distribute space between sections */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+    gap: 40px;
+}
+
+.footer h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.footer a:hover {
+    color: #ff0; /* Change color on hover */
+}
+
+.footer .copyright {
+    margin-top: 20px;
+}
+
+.footer .fas {
+    margin-right: 10px; /* Space between phone icon and number */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack content on smaller screens */
+        align-items: center; /* Center-align items */
+    }
+}
+
+
+

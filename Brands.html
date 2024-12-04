@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphone World</title>
+    <link rel="stylesheet" href="brand.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" />
+    
+</head>
+<body>
+    <!-- Landing Section -->
+    <div class="landing">
+        <header class="head">
+            <h1>Headphone World</h1>
+            <div class="nav">
+                <a href="#" id="brand">Brands</a>
+                <a href="#" id="categorie">Categories</a>
+                <a href="#" id="sale">On Sale</a>
+                <a href="#" id="cart">My Cart</a>
+            </div>
+        </header>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Headphone World</title>
+            <link rel="stylesheet" href="styles.css">
+            <script>
+         
+                let cart = [];
+        
+           
+                function addToCart(productName, productPrice) {
+                    
+                    cart.push({ name: productName, price: productPrice });
+        
+                    
+                    calculateTotal();
+        
+                    displayCart();
+                }
+        
+                
+                function calculateTotal() {
+                    let totalPrice = 0;
+                    cart.forEach(item => {
+                        totalPrice += item.price;
+                    });
+        
+                    
+                    document.getElementById('totalPrice').textContent = "Total Price: " + totalPrice + "/-";
+                }
+        
+               
+                function displayCart() {
+                    let cartContent = "Products in your cart:\n";
+                    cart.forEach(item => {
+                        cartContent += `${item.name} - ${item.price}/-\n`;
+                    });
+                    console.log(cartContent);  
+                }
+            </script>
+        </head>
+        <body>
+            <!-- Product boxes -->
+            <div class="box">
+                <img src="pic3.jpg" alt="headphone image">
+                <div class="product-txt">
+                    <h4 class="product-title0">KZ Airpod</h4>
+                    <p class="product-price">1000/-</p>
+                    <a class="btn" href="#" onclick="addToCart('KZ Airpod', 1000)">Buy Now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="pic2.jpg" alt="headphone image">
+                <div class="product-txt">
+                    <h4 class="product-title0">KZ Airpod</h4>
+                    <p class="product-price">1500/-</p>
+                    <a class="btn" href="#" onclick="addToCart('KZ Airpod', 1500)">Buy Now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="pic1.jpg" alt="headphone image">
+                <div class="product-txt">
+                    <h4 class="product-title0">KZ Airpod</h4>
+                    <p class="product-price">500/-</p>
+                    <a class="btn" href="#" onclick="addToCart('KZ Airpod', 500)">Buy Now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="pic4.jpg" alt="headphone image">
+                <div class="product-txt">
+                    <h4 class="product-title0">KZ Airpod</h4>
+                    <p class="product-price">1500/-</p>
+                    <a class="btn" href="#" onclick="addToCart('KZ Airpod', 1500)">Buy Now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="pic6.jpg" alt="headphone image">
+                <div class="product-txt">
+                    <h4 class="product-title0">KZ Airpod</h4>
+                    <p class="product-price">700/-</p>
+                    <a class="btn" href="#" onclick="addToCart('KZ Airpod', 700)">Buy Now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="pic9.jpg" alt="headphone image">
+                <div class="product-txt">
+                    <h4 class="product-title0">KZ Airpod</h4>
+                    <p class="product-price">750/-</p>
+                    <a class="btn" href="#" onclick="addToCart('KZ Airpod', 750)">Buy Now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="skull.jpg" alt="headphone image">
+                <div class="product-txt">
+                    <h4 class="product-title0">KZ Airpod</h4>
+                    <p class="product-price">2000/-</p>
+                    <a class="btn" href="#" onclick="addToCart('KZ Airpod', 2000)">Buy Now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="pic10.jpg" alt="headphone image">
+                <div class="product-txt">
+                    <h4 class="product-title0">KZ Airpod</h4>
+                    <p class="product-price">800/-</p>
+                    <a class="btn" href="#" onclick="addToCart('KZ Airpod', 800)">Buy Now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="pic8.jpg" alt="headphone image">
+                <div class="product-txt">
+                    <h4 class="product-title0">KZ Airpod</h4>
+                    <p class="product-price">450/-</p>
+                    <a class="btn" href="#" onclick="addToCart('KZ Airpod', 450)">Buy Now</a>
+                </div>
+            </div>
+        
+            <!-- Total price display -->
+            <div id="totalPrice" style="margin-top: 20px; font-size: 20px; font-weight: bold;"></div>
+        </body>
+        </html>
+        
